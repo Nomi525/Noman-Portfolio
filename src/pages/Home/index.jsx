@@ -1,4 +1,4 @@
-import { Header, Footer } from '@/layout';
+import { Header, Footer,Navbar } from '@/layout';
 import { Button } from '@/components';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '@/store/slices/counterSlice';
@@ -11,6 +11,7 @@ const Home = () => {
 
   return (
     <div className="text-fuchsia-100 bg-gray-500 flex flex-col">
+      <Navbar />
       <Header />
       Home Page
       <Button
