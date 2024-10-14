@@ -10,5 +10,5 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  // base: '/Noman-Portfolio/', // Replace with your repository name
+  base: '/Noman-Portfolio/', // Replace with your repository name
 });
