@@ -4,6 +4,8 @@ import {
   faLinkedin,
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons'; // Import for resume file icon
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Disclosure,
@@ -20,6 +22,12 @@ const navigation = [
 ];
 
 const socialMedia = [
+  {
+    name: 'Download CV',
+    href: '#',
+    icon: faFileAlt,
+    current: false,
+  },
   {
     // name: 'Facebook',
     href: 'https://facebook.com',
@@ -121,7 +129,7 @@ const Navbar = () => {
                         className="mr-2"
                       />{' '}
                       {/* Icon added here */}
-                      {/* {item.name} */}
+                      <span className='text-cyan-600'>{item.name}</span>
                     </a>
                   ))}
                 </div>
