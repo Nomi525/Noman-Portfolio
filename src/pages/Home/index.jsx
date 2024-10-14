@@ -1,4 +1,5 @@
-import { Header, Footer,Navbar } from '@/layout';
+import { Header, Footer, Navbar } from '@/layout';
+import { WorkShowCase } from '@/pages';
 import { Button } from '@/components';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from '@/store/slices/counterSlice';
@@ -13,6 +14,8 @@ const Home = () => {
     <div className="text-fuchsia-100 bg-gray-500 flex flex-col">
       <Navbar />
       <Header />
+      <WorkShowCase />
+      {/* <br />
       Home Page
       <Button
         text={'Go About Page (Control Redux-Toolkit)'}
@@ -26,7 +29,7 @@ const Home = () => {
 
         <Button text={'Decrement'} onClick={() => dispatch(decrement())} />
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
