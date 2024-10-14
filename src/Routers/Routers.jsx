@@ -7,11 +7,11 @@ const Routers = () => {
     <div>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/a" element={<Home />} />
           {/* <Route path="/login" element={<Login />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/sign-up" element={<SignUp />} /> */}
-          <Route path="*" element={<Error />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </Router>
     </div>
